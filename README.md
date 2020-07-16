@@ -2,14 +2,14 @@
 
 Display any CSV file as a searchable, filterable, pretty HTML table. Done in 100% JavaScript.
 
-Check out the working demo: http://derekeder.github.io/csv-to-html-table/
+Check out the working demo: https://telecran-telecrit.github.io/csv-to-html-table/
 
 ## Usage
 
 #### 1. Clone this repository (in the command line)
 
 ``` bash
-git clone git@github.com:derekeder/csv-to-html-table.git
+git clone git@github.com:telecran-telecrit/csv-to-html-table.git
 cd csv-to-html-table
 ```
 
@@ -89,7 +89,7 @@ navigate to http://localhost:8000/
 git push origin master:gh-pages
 ```
 
-Then navigate to http://your-github-username.github.io/csv-to-html-table/
+Then navigate to h t t p : / / your-github-username . github . io / csv-to-html-table /
 
 Read more on working with [GitHub pages projects](https://help.github.com/articles/user-organization-and-project-pages/#project-pages).
 
@@ -100,7 +100,7 @@ Read more on working with [GitHub pages projects](https://help.github.com/articl
 Want to embed your nifty table on your website? You can use an [iframe](http://www.w3schools.com/tags/tag_iframe.asp). Once you've deployed your table (above in step 5) you can link to it in an iframe right in your HTML.
 
 ```html
-<iframe style="border-style: none;" src="http://derekeder.github.io/csv-to-html-table/" height="950" width="600"></iframe>
+<iframe style="border-style: none;" src="https://telecran-telecrit.github.io/csv-to-html-table/" height="950" width="600"></iframe>
 ```
 
 ## Dependencies
@@ -124,12 +124,12 @@ If your table isn't displaying any data, try the following:
 ## Errors / Bugs
 
 If something is not behaving intuitively, it is a bug, and should be reported.
-Report it here: https://github.com/derekeder/csv-to-html-table/issues
+Report it here: https://telecran-telecrit.github.io/csv-to-html-table/issues
 
 
 ## Contributors 
 
-* [Derek Eder](http://derekeder.com) - primary contributor
+* [Derek Eder](http://derekeder.com) - first contributor
 * [ychaouche](https://github.com/ychaouche) - [javascript tag fixes](https://github.com/derekeder/csv-to-html-table/pull/30)
 * [Freddy Martinez](https://github.com/b-meson) - [localized javascript libraries](https://github.com/derekeder/csv-to-html-table/pull/17)
 * [Sergey Ponomarev](https://github.com/stokito) - [CSV escaped in HTML output](https://github.com/derekeder/csv-to-html-table/pull/60)
@@ -142,4 +142,4 @@ Report it here: https://github.com/derekeder/csv-to-html-table/issues
 
 ## Copyright
 
-Copyright (c) 2018 Derek Eder. Released under the [MIT License](https://github.com/derekeder/csv-to-html-table/blob/master/LICENSE).
+Copyright (c) 2018 Derek Eder. Released under the [MIT License](https://github.com/telecran-telecrit/csv-to-html-table/blob/master/LICENSE).
