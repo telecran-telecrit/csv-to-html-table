@@ -18,11 +18,13 @@
   <body>
     <div class="container-fluid">
 
-      <h2>CSV to HTML Table</h2>
+      <div class="prefaceText" style="visibility:hidden">
+		  <h2>CSV to HTML Table</h2>
 
-      <p>Display any CSV file as a searchable, filterable, pretty HTML table. Done in 100% JavaScript. <a href='https://github.com/telecran-telecrit/csv-to-html-table'>Code on GitHub</a>.</p>
-      
-      <p>You can change relative csv_path url in your browser location bar by adding <storng>after question mark</storng> csv_path value, e.g. <a href=".?csv_path=data/fatty_acid_profiles.csv">?csv_path=data/fatty_acid_profiles.csv</a></p>
+		  <p>Display any CSV file as a searchable, filterable, pretty HTML table. Done in 100% JavaScript. <a href='https://github.com/telecran-telecrit/csv-to-html-table'>Code on GitHub</a>.</p>
+		  
+		  <p>You can change relative csv_path url in your browser location bar by adding <storng>after question mark</storng> csv_path value, e.g. <a href=".?csv_path=data/fatty_acid_profiles.csv">?csv_path=data/fatty_acid_profiles.csv</a></p>
+      </div>
      
       <div id='table-container'></div>
 
@@ -56,10 +58,20 @@
           return "";
       }
       
-      if (!urlParams || !urlParams.csv_path) {
-		  urlParams = {
+      if (!urlParams) {
+		  urlParams = {};
+	  }
+      if (!urlParams.csv_path) {
+		  urlParams = $.extend(urlParams, {
 			  "csv_path": 'data/sample.csv'
-		  };
+		  });
+	  }
+	  
+	  if (urlParams.prefaceText !== '' && (!urlParams.prefaceText || urlParams.prefaceText === 'visible' || (''+urlParams.prefaceText) === 'true')) {
+		  $('.prefaceText').css({"visibility":"visible"});
+	  } else if (urlParams.prefaceText !== 'none' && urlParams.prefaceText !== 'hidden' && (''+urlParams.prefaceText) !== 'false') {
+		  $('.prefaceText').html(urlParams.prefaceText);
+		  $('.prefaceText').css({"visibility":"visible"});
 	  }
 
       CsvToHtmlTable.init({

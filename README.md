@@ -4,7 +4,7 @@ Display any CSV file as a searchable, filterable, pretty HTML table. Done in 100
 
 Check out the working demo: https://telecran-telecrit.github.io/csv-to-html-table/
 
-Update! Custom csv_path value within url supported.
+Update! Custom csv_path and prefaceText param values within url supported.
 
 ## Usage
 
