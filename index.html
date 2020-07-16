@@ -21,6 +21,8 @@
       <h2>CSV to HTML Table</h2>
 
       <p>Display any CSV file as a searchable, filterable, pretty HTML table. Done in 100% JavaScript. <a href='https://github.com/telecran-telecrit/csv-to-html-table'>Code on GitHub</a>.</p>
+      
+      <p>You can change relative csv_path url in your browser location bar by adding <storng>after question mark</storng> csv_path value, e.g. <a href=".?csv_path=data/fatty_acid_profiles.csv">?csv_path=data/fatty_acid_profiles.csv</a></p>
      
       <div id='table-container'></div>
 
@@ -42,6 +44,8 @@
     <script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
     <script type="text/javascript" src="js/dataTables.bootstrap.js"></script>
     <script type="text/javascript" src="js/csv_to_html_table.js"></script>
+    <script type="text/javascript" src="js/urlParams.js"></script>
+
 
 
     <script type="text/javascript">
@@ -51,9 +55,15 @@
         else
           return "";
       }
+      
+      if (!urlParams || !urlParams.csv_path) {
+		  urlParams = {
+			  "csv_path": 'data/sample.csv'
+		  };
+	  }
 
       CsvToHtmlTable.init({
-        csv_path: 'data/sample.csv',
+        csv_path: urlParams.csv_path,
         element: 'table-container', 
         allow_download: true,
         csv_options: {separator: ',', delimiter: '"'},
