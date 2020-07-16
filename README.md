@@ -124,7 +124,7 @@ If your table isn't displaying any data, try the following:
 ## Errors / Bugs
 
 If something is not behaving intuitively, it is a bug, and should be reported.
-Report it here: https://telecran-telecrit.github.io/csv-to-html-table/issues
+Report it here: https://github.com/telecran-telecrit/csv-to-html-table/issues
 
 
 ## Contributors 
