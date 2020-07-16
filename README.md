@@ -95,14 +95,6 @@ Read more on working with [GitHub pages projects](https://help.github.com/articl
 
 **Web server** This project should work on any web server. Upload this entire project (including all the `css`, `data`, `fonts` and `js` folders) to a public folder on your server using FTP.
 
-#### 6. iframe it (optional)
-
-Want to embed your nifty table on your website? You can use an [iframe](http://www.w3schools.com/tags/tag_iframe.asp). Once you've deployed your table (above in step 5) you can link to it in an iframe right in your HTML.
-
-```html
-<iframe style="border-style: none;" src="https://telecran-telecrit.github.io/csv-to-html-table/" height="950" width="600"></iframe>
-```
-
 ## Dependencies
 
 * [Bootstrap](http://getbootstrap.com/) - Responsive HTML, CSS and Javascript framework
