@@ -42,13 +42,17 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    
+    <script type="text/javascript" src="js/xlsx/jszip.min.js"></script> <!-- was 0.8.0, then 0.12.11 -->
+    <script type="text/javascript" src="js/xlsx/xlsx.min.js"></script> <!-- was 0.8.0, then 0.12.11 -->
+    
     <script type="text/javascript" src="js/jquery.csv.js"></script>
     <script type="text/javascript" src="js/jquery.dataTables.js"></script>
     <script type="text/javascript" src="js/dataTables.bootstrap.js"></script>
     <script type="text/javascript" src="js/csv_to_html_table.min.js"></script>
     <script type="text/javascript" src="js/urlParams.min.js"></script>
 
-
+    
 
     <script type="text/javascript">
       function format_link(link){
@@ -67,6 +71,8 @@
 		  });
 	  }
 	  
+	  
+		  
 	  if (urlParams.prefaceText !== '' && (!urlParams.prefaceText || urlParams.prefaceText === 'visible' || (''+urlParams.prefaceText) === 'true')) {
 		  $('.prefaceText').css({"visibility":"visible"});
 	  } else if (urlParams.prefaceText !== 'none' && urlParams.prefaceText !== 'hidden' && (''+urlParams.prefaceText) !== 'false') {
@@ -82,6 +88,8 @@
         datatables_options: {"paging": false},
         custom_formatting: [[4, format_link]]
       });
+      
+      
     </script>
   </body>
 </html>
